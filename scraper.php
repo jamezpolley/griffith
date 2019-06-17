@@ -35,7 +35,7 @@ $comment_base = "mailto:admin@griffith.nsw.gov.au";
 # Agreed Terms
 $browser = new PGBrowser();
 $page = $browser->get($url_base);
-print $page;
+print $page->html;
 $form = $page->form();
 $form->set('agreed', 'true');
 $page = $form->submit();
